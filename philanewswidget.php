@@ -37,11 +37,11 @@ class PhilaNews extends WP_Widget {
    <label for="<?php echo $this->get_field_id('numberposts'); ?>">Number of posts:</label>
    <select id="<?php echo $this->get_field_id('numberposts'); ?>" name="<?php echo $this->get_field_name('numberposts'); ?>">
    <?php for ($i=1;$i<=20;$i++) {
-         echo '<option value="'.$i.'"';
-         if ($i==$instance['numberposts']) echo ' selected="selected"';
-         echo '>'.$i.'</option>';
-        } ?>
-       </select>
+     echo '<option value="'.$i.'"';
+     if ($i==$instance['numberposts']) echo ' selected="selected"';
+       echo '>'.$i.'</option>';
+     } ?>
+   </select>
   </p>
 
   <p>
